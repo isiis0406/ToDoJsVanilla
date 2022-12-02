@@ -1,1 +1,67 @@
-body{background-color: aqua;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+html,body{
+    height: 100%;
+}
+body{background: rgb(2,0,36);
+    background: linear-gradient(180deg, #22c1c3 0%, #dfdfdf 100%);
+    font-family: 'Roboto',sans-serif;
+}
+input{
+    outline: none;
+}
+
+.form{
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    font-size: 5vw;
+    margin-bottom: 3vh;
+}
+.champ{
+    width: 82vw;
+    background-color: #bbf4f4;
+    padding-left: 1vw;
+    font-size: 4vw;
+
+
+}
+.btn {
+    width: 17vw;
+    background-color: rgb(115, 186, 115);
+    color: teal;
+    cursor: pointer;
+}
+.champ,.btn{
+    border: 2px solid teal;
+    border-radius: 5px;
+}
+ol{
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    padding-left: 1vw ;
+    padding-right: 1vw;
+}
+li{
+    counter-increment: my-awesome-counter;
+    color: teal;
+    margin-bottom: 2px;
+    background-color: #bbf4f4;
+    border-radius: 5px;
+    font-size: 5vw;
+    text-transform: capitalize;
+
+
+}
+li::before{
+    content: counter(my-awesome-counter) "-";
+    color: rgb(0, 0, 0);
+}
+.fa ,.trash{
+    color: rgb(201, 0, 0);
+    font-size: 5vw;
+    float: right;
+}
